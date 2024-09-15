@@ -1,0 +1,14 @@
+Name 
+--> (ascii) XOR 0x35 XorName 
+--> XorName (ascii)
+--> Serial
+
+Example:
+Name:abc1/
+97   98   99   49   47   XOR 0x35
+0x61 0x62 0x63 0x31 0x2F XOR 0x35
+------------------------
+54   57   56   4    1A
+Serial:54575641A
+
+2024.9.15 Chenx221
