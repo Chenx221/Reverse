@@ -1,0 +1,37 @@
+dump swf from exe file (5C000~63A84)
+
+https://github.com/jindrapetrik/jpexs-decompiler
+
+if(Response1.toLowerCase() eq submitField.toLowerCase())
+{
+   if(Response1_value eq "Correct")
+   {
+      Response1_results = "correct";
+   }
+   else if(Response1_value eq "Incorrect")
+   {
+      Response1_results = "incorrect";
+   }
+}
+
+onClipEvent(load){
+   correctFeedback = "Yes that is correct.";
+   incorrectFeedback = "U can do nothing in my improved version.";
+   numOfTries = 2e+201;
+   Interaction_ID = "FillInTheBlank_01";
+   question = "";
+   Response1 = "bbidhan-ThE-GreaT"; <---answer
+   Response1_value = "Correct";
+   Response2_value = "Incorrect";
+   Response3_value = "Incorrect";
+   OtherResponses = "Incorrect";
+   CaseSensitive = "On";
+   ExactMatch = "On";
+   feedback = "On";
+   tracking = "Off";
+   navigation = "Off";
+   Weighting = 1;
+   Response2 = "";
+   Response3 = "";
+   Objective_ID = "";
+}
