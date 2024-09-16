@@ -1,0 +1,32 @@
+太麻烦了，直接patch了判断（密钥算法有点复杂，写的暴力keygen半天了也没找出serial来，不管了patch得了）
+现在只需要8~12位的任意name和12位的任意serial即可
+
+翻译：
+String="eSn-mIn"
+eSn-mIn
+String="Crackme hecho por eSn-mIn dedicado a Felipe"
+由 eSn-mIn 制作的 Crackme，献给 Felipe。
+String="El nombre debe tener entre 8 y 12 caracteres"
+Name必须在 8 到 12 个字符之间。
+String="UEEE, lo has conseguido!"
+哇，你成功了！
+String="El serial es incorrecto"
+序列号不正确。
+
+密钥算法？：
+Name(8~12位) eax
+Serial(12位)(需得到) ebx
+result
+
+#从两个的第12位开始向前
+add dl,eax[n]
+xor dl,ebx[n]
+ror edx,8
+直到处理完全部的12位
+
+add result,edx
+mov eax,edx
+shl eax,2
+add result,eax
+
+除非result为0，否则回到#步
