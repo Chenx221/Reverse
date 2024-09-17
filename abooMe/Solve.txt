@@ -1,0 +1,39 @@
+(15>)Name.length>3
+ebp-E8: name <--User input
+ebp-74: length
+ebp-70: unknown
+ebp-4: part1(底下简称p1)
+ebp-8: part2(p2)
+arr0: 13 16 99 11 63 15 54 52 88 01 31 56 68 55 37 00 25 58 2D 61 62 6F 6F 2D 6D 65 2D 25 58 25 69 2D 53 43 41 00 47 6F 6F 64 20 57 6F 72 6B 21 20 6E 6F 77 20 6D 61 6B 65 20 61 20 6B 65 79 67 65 6E
+(多准备一些，以防万一)
+unknown=0
+while(unknown<length) {
+    v1=unknown
+    v2=name[v1]
+    v4=arr0[v1+1]
+    v4+=part1+v2
+    part1=v4
+    v6=name[v1]
+    v6*=0xA
+    part1+=v6
+    unknown++
+}
+unknown=0
+while(unknown<length){
+    ecx=arr0[unknown]
+    ecx*=0xA
+    part2+=ecx
+    eax=name[2]
+    edx=arr0[unknown]
+    edx+=part2+eax
+    part2=edx
+    part2+=0x31337
+    unknown++
+}
+
+%X-aboo-me-%X%i-SCA
+%X,%X,%i
+p1  p2(十六进制) p2(十进制)
+1FBF      18B23B  1618491
+
+1FBF-aboo-me-18B23B1618491-SCA -->True Serial
