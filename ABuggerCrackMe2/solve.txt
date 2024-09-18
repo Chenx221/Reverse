@@ -1,0 +1,43 @@
+dnspy
+
+DES Encrypt
+key,iv: Encoding.ASCII.GetBytes("ABugger2");
+加密结果以base64形式表示
+
+检查Key文本框是否为空
+检查DES加密(Key文本)==license文件内容
+检查DES加密(license文件路径)=="DIYCtpqJYWygsw1V7MbQdyxPnWMKkR4/"
+
+通过解密可得：
+license文件需要放C:\CrackMes\File
+其内容为DES加密的key的Base64，key和iv上面写了
+
+
+private void btnCheck_Click(object sender, EventArgs e)
+{
+	if (this.open.ShowDialog() == DialogResult.OK)
+	{
+		string fileName = this.open.FileName;
+		try
+		{
+			string text;
+			using (StreamReader streamReader = new StreamReader(fileName))
+			{
+				text = streamReader.ReadLine();
+			}
+			if (this.txtName.Text != "" && Form1.EncryptDES(this.txtName.Text) == text && Form1.EncryptDES(fileName) == "DIYCtpqJYWygsw1V7MbQdyxPnWMKkR4/")
+			{
+				this.lblMode.Text = "Trial mode";
+				this.lblMode.ForeColor = Color.Green;
+			}
+			else
+			{
+				MessageBox.Show("KeyFile is invalid");
+			}
+		}
+		catch
+		{
+			MessageBox.Show("I can't open file! :(");
+		}
+	}
+}
