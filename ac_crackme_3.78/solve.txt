@@ -1,0 +1,35 @@
+﻿VBDec & VB Decompiler
+
+p-code
+
+Name: AcidHell
+Code: 5843
+
+402810 Form1.Form_Load:
+402810    27 FCFE               LitVar_Missing var_104 <--Patch here
+402813    27 1CFF               LitVar_Missing var_E4
+402816    3A 4CFF0A00           LitVarStr var_B4 str_402284='[AC_178] And [TBT] Crackme3' 
+40281B    4E 3CFF               FStVarCopyObj var_C4
+40281E    04 3CFF               FLdRfVar var_C4
+
+402810 Form1.Proc_402810:
+402810    1E 3100               Branch loc_402841 // go to 402841
+402813    27 1CFF               LitVar_Missing var_E4
+402816    3A 4CFF0A00           LitVarStr var_B4 str_402284='[AC_178] And [TBT] Crackme3' 
+40281B    4E 3CFF               FStVarCopyObj var_C4
+40281E    04 3CFF               FLdRfVar var_C4
+402821    F5 10000000           LitI4 0x10
+402826    3A 6CFF0B00           LitVarStr var_94 str_4021B0='This is a NAG screen to our great RV friends, Please remove me first before you are cracking my code..' 
+40282B    4E 5CFF               FStVarCopyObj var_A4
+40282E    04 5CFF               FLdRfVar var_A4
+402831    0A 05001400           ImpAdCallFPR4 rtcMsgBox
+402836    36 0800 [8 bytes]     FFreeVar var_A4 var_C4 var_E4 var_104 
+402841    27 6CFF               LitVar_Missing var_94
+
+  loc_402744: var_10C = ("AcidHell" = CVar(Me.Text1.Text)) And ("5843" = CVar(Me.Text2.Text))
+  loc_40274A: If CBool(var_10C) Then
+  loc_40276E:   MsgBox("I am tha Ruler og the World", &H40, "Congratulations", var_10C, var_14C)
+  loc_40277E:   End
+  loc_402783: Else
+  loc_4027A4:   MsgBox("Try again", &H30, "Not god enough", var_10C, var_14C)
+  loc_4027B4: End If
