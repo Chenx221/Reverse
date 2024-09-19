@@ -1,0 +1,52 @@
+代码量不大，ida一眼可见密码
+
+"aCiDrOcK"
+
+手动的话看下面：
+
+00401005 | E9 06000000          | jmp crackme2.401010                        |
+......
+00401010 | 55                   | push ebp                                   |
+00401011 | 8BEC                 | mov ebp,esp                                |
+00401013 | 83EC 48              | sub esp,48                                 |
+00401016 | 53                   | push ebx                                   |
+00401017 | 56                   | push esi                                   |
+00401018 | 57                   | push edi                                   |
+00401019 | 8D7D B8              | lea edi,dword ptr ss:[ebp-48]              |
+0040101C | B9 12000000          | mov ecx,12                                 | ecx:"aCiDrOcK"
+00401021 | B8 CCCCCCCC          | mov eax,CCCCCCCC                           |
+00401026 | F3:AB                | rep stosd                                  |
+00401028 | 68 68204200          | push crackme2.422068                       | 422068:"This cracme is coded by Acid_Cool_178 and The Bug Tracker\n"
+0040102D | E8 7E010000          | call crackme2.4011B0                       |
+00401032 | 83C4 04              | add esp,4                                  |
+00401035 | 68 4C204200          | push crackme2.42204C                       | 42204C:"Please write the code:"
+0040103A | E8 71010000          | call crackme2.4011B0                       |
+0040103F | 83C4 04              | add esp,4                                  |
+00401042 | 8D45 F8              | lea eax,dword ptr ss:[ebp-8]               | ebp-8: 存储用户输入值
+00401045 | 50                   | push eax                                   |
+00401046 | 68 48204200          | push crackme2.422048                       | 422048:"%8s"
+0040104B | E8 00010000          | call crackme2.401150                       | 用户输入
+00401050 | 83C4 08              | add esp,8                                  |
+00401053 | 68 3C204200          | push crackme2.42203C                       | 42203C:"aCiDrOcK" <---
+00401058 | 8D4D F8              | lea ecx,dword ptr ss:[ebp-8]               |
+0040105B | 51                   | push ecx                                   | 用户输入值
+0040105C | E8 5F000000          | call crackme2.4010C0                       | _strcmp
+00401061 | 83C4 08              | add esp,8                                  |
+00401064 | 85C0                 | test eax,eax                               | 检查core
+00401066 | 75 0F                | jne <crackme2.FailCheck>                   |
+00401068 | 68 2C204200          | push crackme2.42202C                       | 42202C:"\tYoU dId It\n"
+0040106D | E8 3E010000          | call crackme2.4011B0                       |
+00401072 | 83C4 04              | add esp,4                                  |
+00401075 | EB 0D                | jmp crackme2.401084                        |
+00401077 | 68 1C204200          | push crackme2.42201C                       | 42201C:"\tYoU fAiLeD\n"
+0040107C | E8 2F010000          | call crackme2.4011B0                       |
+00401081 | 83C4 04              | add esp,4                                  |
+00401084 | 5F                   | pop edi                                    |
+00401085 | 5E                   | pop esi                                    |
+00401086 | 5B                   | pop ebx                                    |
+00401087 | 83C4 48              | add esp,48                                 |
+0040108A | 3BEC                 | cmp ebp,esp                                |
+0040108C | E8 9F010000          | call crackme2.401230                       |
+00401091 | 8BE5                 | mov esp,ebp                                |
+00401093 | 5D                   | pop ebp                                    |
+00401094 | C3                   | ret                                        |
