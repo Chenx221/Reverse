@@ -1,0 +1,33 @@
+Task1:
+00407430 | 55                   | push ebp                                    | Patch
+00407430 | C3                   | ret                                         |
+
+Task2:
+00407540 | 55                   | push ebp                                    | Patch
+00407540 | C3                   | ret                                         |
+
+Task3:
+5BE7: 00->01
+
+Task4:
+key:"  REGISTERED"
+
+Task5:
+  loc_00409F68: var_D0 = Task5.A1.Value
+  loc_00409FE5: var_D4 = Task5.C1.Value
+  loc_0040A062: var_D8 = Task5.A3.Value
+  loc_0040A0DF: var_DC = Task5.B2.Value
+  loc_0040A15C: var_E0 = Task5.C3.Value
+  loc_0040A1D9: var_E4 = Task5.B4.Value
+  loc_0040A256: var_E8 = Task5.B5.Value
+  loc_0040A2D3: var_EC = Task5.A6.Value
+  loc_0040A350: var_F0 = Task5.C6.Value
+  loc_0040A3CD: var_F4 = Task5.A7.Value
+  loc_0040A44A: var_F8 = Task5.B7.Value
+
+Task6:
+0040ADF5 | 74 3D                | je hellforge strange crackme i.40AE34       | Patch
+NOP
+
+0040AE06 | 6A 00                | push 0                                      | Patch
+0040AE06 | 6A 01                | push 1                                      |
