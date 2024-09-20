@@ -1,0 +1,30 @@
+不是，你哪来的序列号？
+这不patch咋搞
+
+00420A4F | 66:85F6              | test si,si                                       | 
+00420A52 | 74 06                | je crackme578.420A5A                             | <-- Patch#1
+00420A54 | FF15 14104000        | call dword ptr ds:[<__vbaEnd>]                   |
+
+00420A52 | EB 06                | jmp crackme578.420A5A                            |
+
+
+00420ABB | 66:85F6              | test si,si                                       | 
+00420ABE | 74 06                | je crackme578.420AC6                             | <-- Patch#2
+00420AC0 | FF15 14104000        | call dword ptr ds:[<__vbaEnd>]                   |
+
+00420ABE | EB 06                | jmp crackme578.420AC6                            |
+
+
+00420713 | 66:3BFB              | cmp di,bx                                        |
+00420716 | 74 06                | je crackme578.42071E                             | <-- Patch#3
+00420718 | FF15 14104000        | call dword ptr ds:[<__vbaEnd>]                   |
+0042071E | 8B0E                 | mov ecx,dword ptr ds:[esi]                       | esi:"4$B"
+
+00420716 | EB 06                | jmp crackme578.42071E                            |
+
+
+00420829 | 8945 94              | mov dword ptr ss:[ebp-6C],eax                    |
+0042082C | 74 60                | je <crackme578.Success>                          | <-- Patch#4
+0042082E | 8D95 64FFFFFF        | lea edx,dword ptr ss:[ebp-9C]                    | Fail
+
+0042082C | EB 60                | jmp <crackme578.Success>                         |
