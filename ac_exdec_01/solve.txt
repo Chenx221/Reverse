@@ -1,0 +1,10 @@
+p-code
+vbdec
+
+1、
+Owner: Crackme.Form_Load
+Offset: 401A48
+Org: 27FCFE
+Patch: 1E2900
+
+没了？
