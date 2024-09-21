@@ -1,0 +1,28 @@
+	ллллл  лллл ллл ллл        лллл  лллл   лллл  л       ллл ллллллл лллл 
+	л   л лл     л  л лл      лл    лл  лл лл  лл л      лл л      лл л  л 
+	л   л л      л  л  лл     л     л    л л    л л      л  л     лл  л  л 
+	ллллл л      л  л   л     л     л    л л    л л         л    лл   лллл 
+	л   л л      л  л  лл     л     л    л л    л л         л   лл    л  л 
+	л   л лл     л  л лл      лл    лл  лл лл  лл л         л  лл     л  л 
+	л   л  лллл ллл ллл  лллл  лллл  лллл   лллл  лллл лллл л лл      лллл
+
+
+Program____________VB Crackme 8 by Acid_Cool_178
+Complied in________P-Code
+Reccomended tools__ExDec 
+Rating_____________4/10
+Protection_________2 NAG's, Name and Serial
+
+The Serial is generated from the name, there is one small enxryption that was in 6 lines in VB..
+
+I have founded one bug on this onle already, try the number "1" and "2"
+
+Mail you solution to 
+
+
+acid_cool_178@hotmail.com
+
+
+
+Acid_Cool_178
+www.AcidCool.cjb.net

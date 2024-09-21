@@ -1,0 +1,21 @@
+p-code
+vbdec+VB Decompiler
+
+1、(Remove NAG)
+Owner: Form1.Form_Load
+Offset: 401C9C
+Org: 27FCFE
+Patch: 1E5A00
+
+
+var_D0 = ""
+For var_128 = 1 To Len(Name): 
+  var_E0 = var_128
+  For var_15C = 1 To Len(Name): 
+    var_13C = var_15C
+    var_CC = Chr$(CLng(Asc(Mid$(Name, CLng(var_E0), 1)) Xor 3))
+  Next var_15C
+  var_16C = CVar(var_D0 & var_CC)
+Next var_128
+省流：
+code=(name最后一位ascii Xor 3)
