@@ -1,0 +1,46 @@
+1、
+00427E1B | 8D45 AC              | lea eax,dword ptr ss:[ebp-54]                   |
+Patch
+00427E1B | EB 16                | jmp acid_crackme_7.78_native.427E33             |
+00427E1D | 90                   | nop                                             |
+
+1.5、(可选步骤)(似乎影响调试？)
+00427A31 | 8A40 00              | mov al,byte ptr ds:[eax]                        |
+Patch
+00427A31 | EB 1D                | jmp <acid_crackme_7.78_native.S2Task1Btn>       |
+00427A33 | 90                   | nop                                             |
+
+2、
+00428224 | 8D95 7CFFFFFF        | lea edx,dword ptr ss:[ebp-84]                   |
+Patch
+00428224 | EB 18                | jmp acid_crackme_7.78_native.42823E             |
+00428226 | 90                   | nop                                             |
+00428227 | 90                   | nop                                             |
+00428228 | 90                   | nop                                             |
+00428229 | 90                   | nop                                             |
+
+3、
+00427B60 | 55                   | push ebp                                        |
+00427B61 | 8BEC                 | mov ebp,esp                                     |
+00427B63 | 83EC 0C              | sub esp,C                                       |
+Patch
+00427B60 | E9 2B090000          | jmp <acid_crackme_7.78_native.Task2Btn>         |
+00427B65 | 90                   | nop                                             |
+
+
+Type       Address   Module/Label/Exception                     State     Disassembly                                         Hits  Summary                                                                                                                                               
+Software                                                                                                                            
+           00401254  <acid_crackme_7.78_native.exe.OptionalHead One-time  push acid_crackme_7.78_native.407228                0     entry breakpoint
+           0040766C  acid_crackme_7.78_native.exe               Enabled   jmp <acid_crackme_7.78_native.S1_EnteranceBtn>      0     
+           00407679  acid_crackme_7.78_native.exe               Disabled  jmp acid_crackme_7.78_native.428090                 0     
+           00407858  acid_crackme_7.78_native.exe               Enabled   jmp <acid_crackme_7.78_native.T1Load>               0     
+           00407865  acid_crackme_7.78_native.exe               Enabled   jmp acid_crackme_7.78_native.428310                 0     
+           00407872  acid_crackme_7.78_native.exe               Enabled   jmp <acid_crackme_7.78_native.T1Back>               0     
+           00407D08  acid_crackme_7.78_native.exe               Enabled   jmp <acid_crackme_7.78_native.Task2Btn>             0     
+           00408760  acid_crackme_7.78_native.exe               Enabled   jmp <acid_crackme_7.78_native.S2Task1Btn>           0     
+           00408761  acid_crackme_7.78_native.exe               Enabled   jmp acid_crackme_7.78_native.408755                 0     
+           0040876D  acid_crackme_7.78_native.exe               Enabled   jmp <acid_crackme_7.78_native.S2Task2Btn>           0     
+           0040877A  acid_crackme_7.78_native.exe               Enabled   jmp <acid_crackme_7.78_native.S2About>              0     
+           00408787  acid_crackme_7.78_native.exe               Enabled   jmp <acid_crackme_7.78_native.S2Load>               0     
+           00408794  acid_crackme_7.78_native.exe               Enabled   jmp acid_crackme_7.78_native.427EA0                 0     
+           004087A1  acid_crackme_7.78_native.exe               Enabled   jmp acid_crackme_7.78_native.427F10                 0     
