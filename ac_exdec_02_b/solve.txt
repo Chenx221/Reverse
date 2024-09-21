@@ -1,0 +1,9 @@
+p-code
+vbdec
+
+code: 982
+
+401CEB    04 5CFF               FLdRfVar var_A4
+401CEE    28 34FFD603           LitVarI2 var_CC,0x3D6 <--982
+401CF3    5D                    HardType
+401CF4    FB33                  EqVarBool
