@@ -1,0 +1,8 @@
+p-code
+vbdec
+
+1、
+Owner: Crackme.Command1_Click
+Offset: 401DE8
+Org: 27FCFE
+Patch: 1E2900
