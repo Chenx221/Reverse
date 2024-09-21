@@ -1,0 +1,20 @@
+P-code
+VBDEC
+
+1、
+Owner: crackme7.Form_Load
+Offset: 427BEC
+Org: 27FCFE
+Patch: 1E3100
+
+2、
+Owner: TTT.Form_Load
+Offset: 427C8B
+Org: 1C5A00
+Patch: 1E8300
+
+3、(这将阻止DDD的打开)
+Owner: crackme7.Command2_Click
+Offset: 427ADF
+Org: 0DB4020000
+Patch: 1E1B000101
