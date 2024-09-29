@@ -42,7 +42,7 @@
 
    相关函数
 
-   | Address  | Module/Label/Exception               | Disassembly | Hits | Summary      |
-   | -------- | ------------------------------------ | ----------- | ---- | ------------ |
-   | 0040170C | <multicrackme v1.2.exe.Button1Click> | push ebp    | 0    | Button1Click |
-   | 00401E30 | <multicrackme v1.2.exe.Edit2Change>  | push ebp    | 1    | Edit2Change  |
+   | Address  | Module/Label/Exception                 | Disassembly | Hits | Summary      |
+   | -------- | -------------------------------------- | ----------- | ---- | ------------ |
+   | 0040170C | \<multicrackme v1.2.exe.Button1Click\> | push ebp    | 0    | Button1Click |
+   | 00401E30 | \<multicrackme v1.2.exe.Edit2Change\>  | push ebp    | 1    | Edit2Change  |
