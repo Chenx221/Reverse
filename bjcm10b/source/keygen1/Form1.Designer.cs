@@ -194,7 +194,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "Form1";
-            Text = "KeyGen For bishop_crackme_05";
+            Text = "KeyGen For bjcm10b";
             ResumeLayout(false);
             PerformLayout();
         }
