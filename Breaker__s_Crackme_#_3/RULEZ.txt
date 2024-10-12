@@ -1,0 +1,6 @@
+RULEZ:
+To solve this crackme u will have firstly to enable the first button thats leads to the crackme.Then u must enable the other button and textboxes and find the algo to solve it and make a keyGen for it!
+Patching is allowed ONLY for enabling the buttons and textboxes!!
+GOOD CRACKING!!!!!!
+Thanks to -> Breaker
+Coder -> Breaker
