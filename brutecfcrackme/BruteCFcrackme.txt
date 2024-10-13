@@ -1,0 +1,11 @@
+October 2002-Greece
+BruteCFcrackme by human_thought written in Win32Asm
+Rate: 1-2/10 
+
+Hello dear crackers,
+  taking a break from the daily routine,i coded this crackme.This one should be solvable with a bit of bruteforce.Well,this is not the only way,but finding the key by thinking is a bit difficult but not impossible,of course.The key is deliberately small,as the purpose here is just to let you know of a possible way of encryption using a somehow "weird" way.I really don't know if someone has thought of this before,personally i've not seen it somewhere,but as i had this idea,i thought it would be nice to share with other crackers.
+  If you bruteforce,be sure to understand what is going on and explain it in your tutorial(if you write one).I would rate it about 1-2/10 personally.Just take a look at this...
+
+Kind Regards,
+  human_thought
+  
