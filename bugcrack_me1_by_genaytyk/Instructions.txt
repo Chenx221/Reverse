@@ -1,0 +1,39 @@
+***********Bugged crack-me 1 by Genaytyk***********
+
+
+
+---------------------------English-------------------------------
+
+Modify the program to kick the bug and see the good messagebox.
+
+Forbiden!!!!:
+-To see the "Bad CheckSum" message, you must avoid it.
+-To kick the "Bad CheckSum" message.
+-To rebuild the messagebox, you must only defated the bug.
+-To make a loader. Oops i'm an idiot, you cannot make a loader, the checksum check the memory ;-).
+
+Send solutions to genaytyk@hotmail.com
+
+Purpose: Don't use a disassembler, use a debugger and be careful with breakpoints.
+Note: This is my first crack-me. Don't be hangry. ;-)
+
+
+------------------------French-------------------------------
+
+Modifiez le programme pour virer le bug et qu'il affiche le bon message.
+
+Interdit!!!!:
+-De voir le message "Bad CheckSum", vous devez l'éviter.
+-De virer le message "Bad CheckSum".
+-De reconstruire la messagebox, vous devez seulement virer le bug.
+-De créer un loader. Oops j'suis con, vous pouvez pas créer un loader, le checksum verifie la mémoire ;-).
+
+Envoyez vos solutions à genaytyk@hotmail.com
+
+Conseil: N'utilisez pas un désassembleur, utilisez plutôt un débugger et soyez prudent avec les breakpoints.
+Note: C'est mon premier crack-me, soyez pas méchant. ;-)
+
+
+[--Genaytyk--]
+
+"Be anonymous or die"
