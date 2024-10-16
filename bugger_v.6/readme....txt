@@ -1,0 +1,1 @@
+The task I bring to you today is to find a secret message..... Even though it might be hard to find it... Being the reason that it isn't used in any messageboxes or captions.There are a smallamount of texts ... That aren't the correct Message.. If no one finds the correct Message I will post a new one using the message in a MessageBox, but encrypted lol ;)
