@@ -1,0 +1,3 @@
+This is my first keygen.
+It's written in visual c++.
+You have to make a keygen and a tutorial.
