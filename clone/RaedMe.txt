@@ -1,0 +1,31 @@
+
+------ clone -------
+
+
+Author: haggar
+Type:   keygenme
+Level:  2
+
+
+Objective:
+
+You must create working keygen. No patching!!
+
+Algorithm is simple and very clear, easy to understand, but I hope not dumb. First intend was to throw in some arrays which would bring need of bruting serial, but I tought that it would be extra job for nothing. Maybe in next version :)
+
+
+About:
+
+This crackme is based on one FHCF template which I got from potsmoke and I thank him for sharing it with me. That is why I gave it name "clone". Altough from visual side crackme is same as template, algorithm is completly mine.
+
+
+
+
+
+
+
+
+
+
+
+
