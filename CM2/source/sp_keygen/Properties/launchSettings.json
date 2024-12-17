@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "sp_keygen": {
+      "commandName": "Project",
+      "commandLineArgs": "chenx221\r\n123-456-789-X"
+    }
+  }
+}
