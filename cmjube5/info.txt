@@ -1,0 +1,11 @@
+**********************************************
+*                                            *
+*  Name    : Crackme 5.0 by JuBE             *
+*  CoDeR   : JuBE                            *
+*  DaTe    : 25 Feb 2001                     *
+*  RuleZ   : No patch allowed                *
+*  GoaL    : You must find the correct code  *
+*  E-maiL  : jube@poland.com                 *
+*  WebPaGE : www.crackmes.prv.pl             *
+*                                            *
+**********************************************
